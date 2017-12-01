@@ -19,7 +19,7 @@ sudo apt-get install git
 git clone https://github.com/yonseiyes/Monoeci.git
 ./Monoeci/install.sh
 
-monacoCoind #to run wallet
+./monacoCoind #to run wallet
 ```
 
 ## Edit conf

@@ -66,7 +66,7 @@ vi sentinel.conf
 ./venv/bin/py.test ./test
 # 20 passed...라고 뜬다면 성공입니다.
 
-venv/bin/python bin/sentinel.py
+./venv/bin/python bin/sentinel.py
 # You should see: “monacoCoind not synced with network! Awaiting full sync before running Sentinel.”
 # This is exactly what we want to see at this stage
 

@@ -60,8 +60,8 @@ externalip=
 sentinel_install.sh
 
 vi sentinel.conf
-#"monacoCoin_conf=/home/설정한 사용자 이름/.monacoCoinCore/monacoCoin.conf"
-#사용자 이름 부분만 수정하고, ctrl+x -> y -> enter.
+#"monacoCoin_conf=/home/YOURUSERNAME/.monacoCoinCore/monacoCoin.conf"
+#Fix YOURUSERNAME only.
 
 ./venv/bin/py.test ./test
 

@@ -86,7 +86,13 @@ vi sentinel.conf
    “IsSynced”: true,
    “IsFailed”: false
 }
+```
+## Edit masternode.conf
 
+#You can create masternode.conf in local control wallet. 
+
+Masternode-alias VPS_IP:24157 MasternodePrivkey TXID OutputIndex
+```
 ```
 ## How to update 
 ```sh

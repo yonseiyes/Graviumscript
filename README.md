@@ -96,7 +96,7 @@ crontab -e
 # 1) Change USERNAME to your username.
 # 2) Hit enter to create another line at the end after this line, or the file will not work.
 
-#Press Control-X to save and exit.
+# type ':wq' to save & exit
 ```
 ## Edit masternode.conf
 ```sh

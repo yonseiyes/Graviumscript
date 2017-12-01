@@ -1,29 +1,29 @@
-## Bitrad.io Install&Build Shell
+## Monoeci Install&Build Shell
 
 ![alt text](https://chainz.cryptoid.info/logo/bro.png)
 
-You can find Bitrad.io documents from [Bitrad.io Github](https://github.com/thebitradio/Bitradio/tree/master/doc)
+You can find Monoeci documents from [Monoeci Github](https://github.com/monacocoin-net/monacoCoin-Core)
 
 System Requirements
 
- * Ubuntu 16.04 x64
+ * Ubuntu 14.04 x64
  * Minimum Storage 10GB
  * Minimum Memory 2GB
 
 ## How to use
 
 ```sh
-git clone https://github.com/MinseokOh/bro_qtbuild.git
-./bro_qtbuild/install.sh
+git clone https://github.com/yonseiyes/Monoeci.git
+./monacoCoin_qtbuild/install.sh
 
-Bitradiod #to run wallet
+monacoCoind #to run wallet
 ```
 
 ## Edit conf
 
 Open conf file 
 ```sh
-vi ./.Bitradio/Bitradio.conf
+vi ./.monacoCoin/monacoCoin.conf
 ```
 
 Paste conf
@@ -40,12 +40,12 @@ externalip=[serverip]
 ```
 
 ```sh
-Bitradiod #to run wallet
+monacoCoind #to run wallet
 ```
 
 ## How to update 
 ```sh
-cd bro_qtbuild
+cd monacoCoin_qtbuild
 git pull
 ./update.sh
 ```

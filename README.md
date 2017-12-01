@@ -12,6 +12,7 @@ System Requirements
 ## How to use
 
 ```sh
+sudo apt-get update
 sudo apt-get install git
 git clone https://github.com/yonseiyes/Monoeci.git
 ./Monoeci/install.sh

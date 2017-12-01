@@ -87,6 +87,11 @@ vi sentinel.conf
    “IsFailed”: false
 }
 ```
+## Set-up of crontab
+```sh
+*/5 * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
+
+```
 ## Edit masternode.conf
 ```sh
 #You can create masternode.conf in local control wallet. 

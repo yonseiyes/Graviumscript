@@ -31,15 +31,16 @@ vi ./.monacoCoinCore/monacoCoin.conf
 
 Paste conf
 ```sh
-rpcuser=[rpcusername]
-rpcpassword=[rpcpassword]
+rpcuser=
+rpcpassword=
 rpcallowip=127.0.0.1
-daemon=1
 server=1
 listen=1
+daemon=1
+maxconnections=24
 masternode=1
-masternodeprivkey=[masternodegenkey]
-externalip=[serverip]
+masternodeprivkey=
+externalip=
 ```
 
 ```sh

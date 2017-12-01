@@ -44,8 +44,8 @@ externalip=
 ```
 
 ```sh
-monacoCoind #to run wallet
-monacoCoin-cli mnsync status
+./monacoCoind #to run wallet
+./monacoCoin-cli mnsync status
 ```
 
 ## How to update 

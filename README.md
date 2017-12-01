@@ -7,8 +7,7 @@ You can find Monoeci documents from [Monoeci Github](https://github.com/monacoco
 System Requirements
 
  * Ubuntu 14.04 x64
- * Minimum Storage 10GB
- * Minimum Memory 2GB
+
 
 ## How to use
 

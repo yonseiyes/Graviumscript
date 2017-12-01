@@ -89,6 +89,7 @@ vi sentinel.conf
 ```
 ## Set-up of crontab
 ```sh
+crontab -e
 */5 * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 
 ```

@@ -91,7 +91,9 @@ vi sentinel.conf
 ```sh
 #You can create masternode.conf in local control wallet. 
 
-Masternode-alias VPS_IP:24157 MasternodePrivkey TXID OutputIndex
+YOUR_MASTERNODE_ALIAS VPS_IP:24157 MasternodePrivkey TXID OutputIndex
+
+masternode start-alias YOUR_MASTERNODE_ALIAS
 ```
 ## How to update 
 ```sh

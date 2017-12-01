@@ -20,7 +20,7 @@ git clone https://github.com/yonseiyes/Monoeci.git
 ./monacoCoind #run wallet and Press Control+C
 ```
 
-## Edit conf
+## Edit monacoCoin.conf
 
 Open conf file 
 ```sh

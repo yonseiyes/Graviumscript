@@ -70,6 +70,22 @@ vi sentinel.conf
 # You should see: “monacoCoind not synced with network! Awaiting full sync before running Sentinel.”
 # This is exactly what we want to see at this stage
 
+# Next Step: Wait until the reindex has complete and the wallet has sync’d
+
+./monacoCoini-cli masternode status
+
+#This is what you’re waiting to see:
+#AssetId 999, all trues, one false, and a FINISHED. 
+{
+   “AssetID”: 999,
+   “AssetName”: “MASTERNODE_SYNC_FINISHED”,
+   “Attempt”: 0,
+   “IsBlockchainSynced”: true,
+   “IsMasternodeListSynced”: true,
+   “IsWinnersListSynced”: true,
+   “IsSynced”: true,
+   “IsFailed”: false
+}
 
 ```
 ## How to update 

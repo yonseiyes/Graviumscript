@@ -1,6 +1,6 @@
 ## Monoeci Install&Build Shell
 
-![alt text](https://pbs.twimg.com/media/DPtc8DWWAAAJWR5.jpg)
+![alt text](http://block.monacocoin.net:8080/images/logo.png)
 
 You can find Monoeci documents from [Monoeci Github](https://github.com/monacocoin-net/monacoCoin-Core)
 

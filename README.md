@@ -112,4 +112,4 @@ masternode start-alias YOUR_MASTERNODE_ALIAS
 ./monacoCoin-cli masternode status
 ```
 
-that's all! enjoy masternode 
+that's all! enjoy masternode!!

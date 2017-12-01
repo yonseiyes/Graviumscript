@@ -5,10 +5,10 @@ ROOT=$(pwd)
 echo 'Start install Monoeci wallet'
 echo 'https://github.com/yonseiyes/Monoeci'
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install unzip
-sudo apt-get install git
+#sudo apt-get update
+#sudo apt-get upgrade
+#sudo apt-get install unzip
+#sudo apt-get install git
 sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev -y
 sudo apt-get install libboost-test-dev libboost-thread-dev libboost-all-dev unzip libminiupnpc-dev python-virtualenv -y
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils -y

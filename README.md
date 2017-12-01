@@ -97,7 +97,7 @@ YOUR_MASTERNODE_ALIAS VPS_IP:24157 MasternodePrivkey TXID OutputIndex
 ```sh
 masternode start-alias YOUR_MASTERNODE_ALIAS
 
-# To confirm whether your masternode is working properly, type as below
+# To confirm whether your masternode is working properly, type as below in VPS 
 ./monacoCoin-cli masternode status
 ```
 ## How to update 

@@ -33,7 +33,7 @@ Copy & Paste
    
     1. type 'i' for insert-mode
     
-    2. copy & paste below
+    2. copy & paste below & insert some informations
     
     3. press 'ESC' & type ':wq' for saving.
 
@@ -50,7 +50,7 @@ masternodeprivkey=
 externalip=
 ```
 
-Running Wallet Daemon
+## Running Wallet Daemon
 ```sh
 ./monacoCoind 
 ./monacoCoin-cli mnsync status

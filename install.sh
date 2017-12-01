@@ -5,7 +5,7 @@ ROOT=$(pwd)
 echo 'Start install Monoeci wallet'
 echo 'https://github.com/yonseiyes/Monoeci'
 
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install unzip
 #sudo apt-get install git

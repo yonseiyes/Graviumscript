@@ -55,7 +55,10 @@ externalip=
 ./monacoCoind 
 ./monacoCoin-cli mnsync status
 ```
-
+## Sentinel Installation
+```sh
+sentinel_install.sh
+```
 ## How to update 
 ```sh
 cd monacoCoin_qtbuild

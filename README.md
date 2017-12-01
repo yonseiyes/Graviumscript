@@ -23,7 +23,7 @@ monacoCoind #to run wallet
 
 Open conf file 
 ```sh
-vi ./.monacoCoin/monacoCoin.conf
+vi ./.monacoCoinCore/monacoCoin.conf
 ```
 
 Paste conf

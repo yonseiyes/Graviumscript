@@ -14,7 +14,7 @@ System Requirements
 
 ```sh
 git clone https://github.com/yonseiyes/Monoeci.git
-./monacoCoin_qtbuild/install.sh
+./Monoeci/install.sh
 
 monacoCoind #to run wallet
 ```

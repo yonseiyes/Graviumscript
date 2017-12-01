@@ -1,11 +1,11 @@
 #sentinel_install.sh
 
 #Step 1) Install the prerequisites
-sudo apt-get update
-sudo apt-get install -y git python-virtualenv
+#sudo apt-get update
+#sudo apt-get install -y git python-virtualenv
 
 #Step 2) If you are not already there, navigate to your .innovacore folder
-cd .innovacore
+cd .monacoCoinCore
 
 #Step 3) Clone sentinel, switch to the sentinel directory
 git clone https://github.com/monacocoin-net/sentinel.git

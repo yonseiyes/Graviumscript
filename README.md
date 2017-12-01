@@ -41,6 +41,7 @@ externalip=[serverip]
 
 ```sh
 monacoCoind #to run wallet
+monacoCoin-cli mnsync status
 ```
 
 ## How to update 

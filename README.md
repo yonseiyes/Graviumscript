@@ -17,7 +17,7 @@ sudo apt-get install git
 git clone https://github.com/yonseiyes/Monoeci.git
 ./Monoeci/install.sh
 
-./monacoCoind #to run wallet
+./monacoCoind #run wallet and Press Control+C
 ```
 
 ## Edit conf
@@ -27,7 +27,12 @@ Open conf file
 vi ./.monacoCoinCore/monacoCoin.conf
 ```
 
-Paste conf
+Copy & Paste 
+
+vi usage : 
+1. type 'i' for insert-mode
+2. copy & paste below
+3. press 'ESC' & type ':wq' for saving.
 ```sh
 rpcuser=
 rpcpassword=
@@ -42,7 +47,7 @@ externalip=
 ```
 
 ```sh
-./monacoCoind #to run wallet
+./monacoCoind 
 ./monacoCoin-cli mnsync status
 ```
 

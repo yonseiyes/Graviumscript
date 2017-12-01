@@ -60,11 +60,11 @@ externalip=
 sentinel_install.sh
 
 vi sentinel.conf
-#"monacoCoin_conf=/home/YOURUSERNAME/.monacoCoinCore/monacoCoin.conf"
-#Fix YOURUSERNAME only.
+# "monacoCoin_conf=/home/YOURUSERNAME/.monacoCoinCore/monacoCoin.conf"
+# Fix YOURUSERNAME only.
 
 ./venv/bin/py.test ./test
-
+# 20 passed...라고 뜬다면 성공입니다.
 ```
 ## How to update 
 ```sh

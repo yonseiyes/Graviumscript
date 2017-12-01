@@ -57,7 +57,7 @@ externalip=
 ```
 ## Sentinel Installation
 ```sh
-sentinel_install.sh
+./Monoeci/sentinel_install.sh
 
 vi sentinel.conf
 # "monacoCoin_conf=/home/YOURUSERNAME/.monacoCoinCore/monacoCoin.conf"

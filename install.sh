@@ -25,9 +25,10 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 #sudo apt-get install make -y
 #sudo apt-get install make-guile -y
 
-pushd $ROOT/monacoCoin_qtbuild
-./install_db.sh
-popd
+wget 'https://github.com/monacocoin-net/monacoCoin-Core/releases/download/0.12.1.5.1/monacoCoinCore-0.12.1.5.1-linux64-cli.taz.gz'
+tar xzvf monacoCoinCore-0.12.1.5.1-linux64-cli.taz.gz
+chmod +x monacoCoind monacoCoin-tx monacoCoin-cli
+
 
 git clone https://github.com/monacocoin-net/monacoCoin-Core
 

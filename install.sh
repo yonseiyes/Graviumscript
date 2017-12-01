@@ -2,8 +2,8 @@
 
 ROOT=$(pwd)
 
-echo 'Strat install Monoeci wallet'
-echo 'https://github.com/yonseiyes/monacoCoin_qtbuild'
+echo 'Start install Monoeci wallet'
+echo 'https://github.com/yonseiyes/Monoeci'
 
 sudo apt-get update
 sudo apt-get upgrade
@@ -18,23 +18,20 @@ sudo apt-get install build-essential libtool autotools-dev automake pkg-config l
 #sudo apt-get install libboost-all-dev -y
 
 sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get install software-properties-common && add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 #sudo apt-get install libminiupnpc-dev -y
 #sudo apt-get install libqrencode-dev -y
 #sudo apt-get install make -y
 #sudo apt-get install make-guile -y
+adduser Monoeci
+su Monoeci
+cd
 
 wget 'https://github.com/monacocoin-net/monacoCoin-Core/releases/download/0.12.1.5.1/monacoCoinCore-0.12.1.5.1-linux64-cli.taz.gz'
 tar xzvf monacoCoinCore-0.12.1.5.1-linux64-cli.taz.gz
 chmod +x monacoCoind monacoCoin-tx monacoCoin-cli
 
-
-git clone https://github.com/monacocoin-net/monacoCoin-Core
-
-pushd $ROOT/Bitradio/src
-sudo make -f makefile.unix # Headless
-sudo cp Bitradiod /usr/local/bin
-popd
 
 echo 'finished install!'

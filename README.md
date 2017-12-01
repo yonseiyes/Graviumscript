@@ -29,10 +29,10 @@ vi ./.monacoCoinCore/monacoCoin.conf
 
 Copy & Paste 
 
-vi usage : 
-1. type 'i' for insert-mode
-2. copy & paste below
-3. press 'ESC' & type ':wq' for saving.
+  vi usage : 
+    1. type 'i' for insert-mode
+    2. copy & paste below
+    3. press 'ESC' & type ':wq' for saving.
 ```sh
 rpcuser=
 rpcpassword=
@@ -46,6 +46,7 @@ masternodeprivkey=
 externalip=
 ```
 
+Running Wallet Daemon
 ```sh
 ./monacoCoind 
 ./monacoCoin-cli mnsync status

@@ -92,6 +92,11 @@ vi sentinel.conf
 crontab -e
 */5 * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 
+# Make sure you:
+# 1) Change USERNAME to your username.
+# 2) Hit enter to create another line at the end after this line, or the file will not work.
+
+#Press Control-X to save and exit.
 ```
 ## Edit masternode.conf
 ```sh

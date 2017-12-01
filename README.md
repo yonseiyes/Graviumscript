@@ -96,6 +96,9 @@ YOUR_MASTERNODE_ALIAS VPS_IP:24157 MasternodePrivkey TXID OutputIndex
 ## Starting Masternode in Console of Control wallet
 ```sh
 masternode start-alias YOUR_MASTERNODE_ALIAS
+
+# To confirm whether your masternode is working properly, type as below
+./monacoCoin-cli masternode status
 ```
 ## How to update 
 ```sh

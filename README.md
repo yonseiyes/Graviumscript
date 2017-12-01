@@ -111,11 +111,5 @@ masternode start-alias YOUR_MASTERNODE_ALIAS
 # To confirm whether your masternode is working properly, type as below in VPS 
 ./monacoCoin-cli masternode status
 ```
-## How to update 
-```sh
-cd monacoCoin_qtbuild
-git pull
-./update.sh
-```
 
 that's all! enjoy masternode 

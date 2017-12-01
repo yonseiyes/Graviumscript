@@ -19,5 +19,3 @@ virtualenv ./venv
 #Step 5) Install sentinel dependencies
 ./venv/bin/pip install -r requirements.txt
 
-vi sentinel.conf
-./venv/bin/py.test ./test

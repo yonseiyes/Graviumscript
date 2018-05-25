@@ -23,15 +23,6 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
 ```
 ## Sentinel Installation
 ```sh
-./venv/bin/py.test ./test
-# 20 passed...라고 뜬다면 성공입니다.
-
-./venv/bin/python bin/sentinel.py
-# You should see: “graviumd not synced with network! Awaiting full sync before running Sentinel.”
-# This is exactly what we want to see at this stage
-
-# Next Step: Wait until the reindex has complete and the wallet has sync’d
-
 ./gravium-cli mnsync status
 
 #This is what you’re waiting to see:
@@ -46,12 +37,6 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
    “IsSynced”: true,
    “IsFailed”: false
 }
-```
-## Set-up of crontab
-```sh
-crontab -e
-* * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
-
 ```
 ## Edit masternode.conf
 ```sh

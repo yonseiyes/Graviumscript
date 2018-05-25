@@ -32,7 +32,7 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
 
 # Next Step: Wait until the reindex has complete and the wallet has sync’d
 
-./gravium-cli masternode status
+./gravium-cli mnsync status
 
 #This is what you’re waiting to see:
 #AssetId 999, all trues, one false, and a FINISHED. 

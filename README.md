@@ -52,11 +52,6 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
 crontab -e
 * * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 
-# Make sure you:
-# 1) Change USERNAME to your username.
-# 2) Hit enter to create another line at the end after this line, or the file will not work.
-
-# type ':wq' to save & exit
 ```
 ## Edit masternode.conf
 ```sh

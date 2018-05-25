@@ -1,78 +1,43 @@
-## Monoeci Install&Build Shell
+## Gravium Install&Build Shell
 
-![alt text](https://pbs.twimg.com/media/DPVKRTkW0AA69q5.jpg)
+![alt text](https://media.discordapp.net/attachments/437326359165927433/444823943866482699/Logo_DarkBG.png)
 
-You can find Monoeci documents from [Monoeci Github](https://github.com/monacocoin-net/monacoCoin-Core)
+You can find Gravium documents from [Gravium Github](https://github.com/Gravium/gravium)
 
 System Requirements
 
- * Ubuntu 14.04 x64
+ * Ubuntu 16.04 x64
 
 
 ## How to use
 
 ```sh
-sudo apt-get update
-sudo apt-get install git
-git clone https://github.com/yonseiyes/Monoeci.git
-./Monoeci/install.sh
+git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash masternode.sh
 
-./monacoCoind #run wallet and Press Control+C
-```
-
-## Edit monacoCoin.conf
-
-Open conf file 
-```sh
-vi ./.monacoCoinCore/monacoCoin.conf
-```
-
-Copy & Paste 
-
-  vi usage : 
-   
-    1. type 'i' for insert-mode
-    
-    2. copy & paste below & insert some informations
-    
-    3. press 'ESC' & type ':wq' for saving.
-
-```sh
-rpcuser=
-rpcpassword=
-rpcallowip=127.0.0.1
-server=1
-listen=1
-daemon=1
-maxconnections=24
-masternode=1
-masternodeprivkey=
-externalip=
 ```
 
 ## Running Wallet Daemon
 ```sh
-./monacoCoind 
-./monacoCoin-cli mnsync status
+./graviumd -daemon
+
 ```
 ## Sentinel Installation
 ```sh
-./Monoeci/sentinel_install.sh
 
 vi sentinel.conf
-# "monacoCoin_conf=/home/YOURUSERNAME/.monacoCoinCore/monacoCoin.conf"
-# Fix YOURUSERNAME only.
+# "gravium_conf=/root/.graviumcore/gravium.conf"
+
 
 ./venv/bin/py.test ./test
 # 20 passed...라고 뜬다면 성공입니다.
 
 ./venv/bin/python bin/sentinel.py
-# You should see: “monacoCoind not synced with network! Awaiting full sync before running Sentinel.”
+# You should see: “graviumd not synced with network! Awaiting full sync before running Sentinel.”
 # This is exactly what we want to see at this stage
 
 # Next Step: Wait until the reindex has complete and the wallet has sync’d
 
-./monacoCoin-cli masternode status
+./gravium-cli masternode status
 
 #This is what you’re waiting to see:
 #AssetId 999, all trues, one false, and a FINISHED. 
@@ -90,7 +55,7 @@ vi sentinel.conf
 ## Set-up of crontab
 ```sh
 crontab -e
-*/5 * * * * cd /home/YOURUSERNAME/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
+*/5 * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 
 # Make sure you:
 # 1) Change USERNAME to your username.
@@ -109,7 +74,7 @@ YOUR_MASTERNODE_ALIAS VPS_IP:24157 MasternodePrivkey TXID OutputIndex
 masternode start-alias YOUR_MASTERNODE_ALIAS
 
 # To confirm whether your masternode is working properly, type as below in VPS 
-./monacoCoin-cli masternode status
+./gravium-cli masternode status
 ```
 
-That's all! Enjoy your Masternode!! - written by 돔말
+That's all! Enjoy your Masternode!! - written by 돔말(dommal)

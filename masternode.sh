@@ -164,7 +164,7 @@ rpcuser=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 rpcpassword=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 externalip=$(hostname -i | awk '{print $2}')
 
-echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=0\nrpcport=3385\nstaking=0\nexternalip=$externalip:7785\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$key" >> $HOME/.graviumcore/gravium.conf
+echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=0\nrpcport=3385\nstaking=0\nexternalip=$externalip:7979\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$key" >> $HOME/.graviumcore/gravium.conf
 
 # Setup systemd service
 echo && echo "Almost There...."

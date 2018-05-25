@@ -23,11 +23,6 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
 ```
 ## Sentinel Installation
 ```sh
-
-vi sentinel.conf
-# "gravium_conf=/root/.graviumcore/gravium.conf"
-
-
 ./venv/bin/py.test ./test
 # 20 passed...라고 뜬다면 성공입니다.
 
@@ -55,7 +50,7 @@ vi sentinel.conf
 ## Set-up of crontab
 ```sh
 crontab -e
-*/5 * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
+* * * * * cd /root/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 
 # Make sure you:
 # 1) Change USERNAME to your username.

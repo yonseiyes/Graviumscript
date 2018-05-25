@@ -1,4 +1,4 @@
-## Gravium Install&Build Shell
+## Gravium Masternode Install&Build Shell
 
 ![alt text](https://media.discordapp.net/attachments/437326359165927433/444823943866482699/Logo_DarkBG.png)
 
@@ -11,6 +11,7 @@ System Requirements
 
 ## How to use
 
+Copy & Paste below on command line of VPS server
 ```sh
 git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash masternode.sh
 

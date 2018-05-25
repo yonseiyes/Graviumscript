@@ -154,6 +154,7 @@ echo && echo "Let's take this baby for a spin =D"
 sleep 3
 cd src
 ./graviumd -daemon
+sleep 30
 ./gravium-cli stop
 
 # Create config
@@ -161,21 +162,9 @@ echo && echo "Making a config for Gravium"
 sleep 3
 rpcuser=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 rpcpassword=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
-sudo touch /root/.gravium/gravium.conf
-echo '
-rpcuser='$rpcuser'
-rpcpassword='$rpcpassword'
-rpcallowip=127.0.0.1
-listen=1
-server=1
-rpcport=3385
-daemon=0 # required for systemd
-logtimestamps=1
-maxconnections=256
-externalip='$ip'
-masternodeprivkey='$key'
-masternode=1
-' | sudo -E tee /root/.gravium/gravium.conf
+externalip=$(hostname -i | awk '{print $2}')
+
+echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=0\nrpcport=3385\nstaking=0\nexternalip=$externalip:7785\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$key" >> $HOME/.graviumcore/gravium.conf
 
 # Setup systemd service
 echo && echo "Almost There...."

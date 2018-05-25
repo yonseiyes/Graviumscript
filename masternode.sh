@@ -197,6 +197,7 @@ sudo pip3 install virtualenv
 sudo apt-get install screen
 sudo git clone https://github.com/Gravium/sentinel.git /root/sentinel
 cd /root/sentinel
+echo -e "gravium_conf=/root/.graviumcore/gravium.conf" >> /root/sentinel/sentinel.conf
 virtualenv venv
 . venv/bin/activate
 pip install -r requirements.txt

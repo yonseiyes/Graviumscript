@@ -37,8 +37,8 @@ if [[ "$key" == "" ]]; then
     echo "WARNING: No private key entered, exiting!!!"
     echo && exit
 fi
-read -e -p "Hello! VPS Server IP Address and Masternode Port : " ip
-echo && echo "Pressing ENTER will use the default value for the next prompts. It's ok, you can just click enter."
+#read -e -p "Hello! VPS Server IP Address and Masternode Port : " ip
+#echo && echo "Pressing ENTER will use the default value for the next prompts. It's ok, you can just click enter."
 echo && sleep 3
 read -e -p "Add swap space? (Recommended) [Y/n] : " add_swap
 if [[ ("$add_swap" == "y" || "$add_swap" == "Y" || "$add_swap" == "") ]]; then

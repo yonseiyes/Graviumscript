@@ -1,4 +1,5 @@
 #/bin/bash
+# This script has been originally made by Gravium Coin Dev team. I changed only a few lines of original script.
 
 clear
 cd ~

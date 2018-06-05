@@ -43,7 +43,7 @@ git clone https://github.com/yonseiyes/Graviumscript;cd Graviumscript;bash maste
 ```sh
 #You can create masternode.conf in local control wallet. 
 
-YOUR_MASTERNODE_ALIAS VPS_IP:7979 MasternodePrivkey TXID OutputIndex
+YOUR_MASTERNODE_ALIAS VPS_IP:11010 MasternodePrivkey TXID OutputIndex
 ```
 ## Starting Masternode in Console of Control wallet
 ```sh

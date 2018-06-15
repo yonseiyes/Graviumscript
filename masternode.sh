@@ -40,6 +40,21 @@ if [[ "$key" == "" ]]; then
 fi
 #read -e -p "Hello! VPS Server IP Address and Masternode Port : " ip
 #echo && echo "Pressing ENTER will use the default value for the next prompts. It's ok, you can just click enter."
+# Determine primary public IP address
+dpkg -s dnsutils 2>/dev/null >/dev/null || sudo apt-get -y install dnsutils
+publicip=$(dig +short myip.opendns.com @resolver1.opendns.com)
+
+if [ -n "$publicip" ]; then
+    echo -e "${YELLOW}IP Address detected:" $publicip ${NC}
+else
+    echo -e "${RED}ERROR:${YELLOW} Public IP Address was not detected!${NC} \a"
+    clear_stdin
+    read -e -p "Enter VPS Public IP Address: " publicip
+    if [ -z "$publicip" ]; then
+        echo -e "${RED}ERROR:${YELLOW} Public IP Address must be provided. Try again...${NC} \a"
+        exit 1
+    fi
+fi
 echo && sleep 3
 read -e -p "Add swap space? (Recommended) [Y/n] : " add_swap
 if [[ ("$add_swap" == "y" || "$add_swap" == "Y" || "$add_swap" == "") ]]; then
@@ -163,9 +178,9 @@ echo && echo "Making a config for Gravium"
 sleep 3
 rpcuser=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
 rpcpassword=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
-externalip=$(hostname -i | awk '{print $2}')
+#externalip=$(hostname -i | awk '{print $2}')
 
-echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=0\nrpcport=11000\nstaking=0\nexternalip=$externalip:11010\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$key" >> $HOME/.graviumcore/gravium.conf
+echo -e "rpcuser=$rpcuser\nrpcpassword=$rpcpassword\nrpcallowip=127.0.0.1\nlisten=1\nserver=1\ndaemon=0\nrpcport=11000\nstaking=0\nexternalip=$publicip:11010\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$key" >> $HOME/.graviumcore/gravium.conf
 
 # Setup systemd service
 echo && echo "Almost There...."
